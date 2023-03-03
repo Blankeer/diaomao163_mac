@@ -12,7 +12,7 @@ local msgCb = function(action,content)
       menubar:setTitle("已连接")
       math.randomseed(os.time())
       nickname="diaomao_mac_"..math.random(1,999)
-      sendText("{\"cmd\":\"join\",\"channel\":\""..channel.."\",\"nick\":\""..nickname.."\"}")
+      sendText("{\"cmd\":\"join\",\"channel\":\"diaomao163_"..channel.."\",\"nick\":\""..nickname.."\"}")
    elseif action=="received" then
       if currentMusic == nil then
          menubar:setTitle("已连接")
